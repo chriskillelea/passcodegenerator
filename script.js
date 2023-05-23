@@ -14,7 +14,6 @@ var numericCharacters = [
   '9'
 ];
 
-// Function to prompt user for password options
 function getPasswordOptions() {
   var hasNumericCharacters = confirm('Include numeric characters?');
   var length = parseInt(prompt('Enter password length:'));
@@ -27,7 +26,6 @@ function getPasswordOptions() {
   return passwordOptions;
 }
 
-// Function for getting a random element from an array
 function getRandom(arr) {
   var randIndex = Math.floor(Math.random() * arr.length);
   var randElement = arr[randIndex];
@@ -35,7 +33,7 @@ function getRandom(arr) {
   return randElement;
 }
 
-// Function to generate password with user input
+
 function generatePassword() {
   var options = getPasswordOptions();
   var result = [];
